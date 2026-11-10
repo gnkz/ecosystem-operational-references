@@ -121,7 +121,9 @@ Pass condition:
 
 - Live role assignments match scope
 - Timelock values match the intended governance policy
-- Standard Morpho timelocks (required for Morpho UI listing) confirmed via the vault's listing checks in the [Morpho Curator app](https://curator.morpho.org) (`/vaults/<chainId>/<vaultAddress>/listing`)
+- Standard Morpho timelocks (required for Morpho UI listing) confirmed in the [Morpho Curator app](https://curator.morpho.org):
+  - Vault not yet listed: the listing checklist at `/vaults/<chainId>/<vaultAddress>/listing` checks each timelock against Morpho's listing minimum
+  - Vault already listed: the checklist is no longer shown, so compare the values at `/vaults/<chainId>/<vaultAddress>/timelocks` ([example](https://curator.morpho.org/vaults/1/0x802148D518A6De2aF866f9A61ffB5e5C39156dB2/timelocks)) with the listing minimums: 7 days for `increaseTimelock`, `removeAdapter` and `abdicate`, and 3 days for `addAdapter`, `increaseAbsoluteCap`, `increaseRelativeCap` and the adapter's `burnShares`
 
 ### 7. Verify Audit Coverage and Provenance
 
