@@ -123,7 +123,7 @@ Pass condition:
 - Timelock values match the intended governance policy
 - Standard Morpho timelocks (required for Morpho UI listing) confirmed in the [Morpho Curator app](https://curator.morpho.org):
   - Vault not yet listed: the listing checklist at `/vaults/<chainId>/<vaultAddress>/listing` checks each timelock against Morpho's listing minimum
-  - Vault already listed: the checklist is no longer shown, so compare the values at `/vaults/<chainId>/<vaultAddress>/timelocks` ([example](https://curator.morpho.org/vaults/1/0x802148D518A6De2aF866f9A61ffB5e5C39156dB2/timelocks)) with the listing minimums: 7 days for `increaseTimelock`, `removeAdapter` and `abdicate`, and 3 days for `addAdapter`, `increaseAbsoluteCap`, `increaseRelativeCap` and the adapter's `burnShares`
+  - Vault already listed: the checklist is no longer shown, so compare the values at `/vaults/<chainId>/<vaultAddress>/timelocks` with the minimums in Sky Atlas [A.2.2.10.1.1.1.3.3 - Timelock Requirements](https://sky-atlas.io/#1078548f-1086-49d2-bc01-f5727f088e41)
 
 ### 7. Verify Audit Coverage and Provenance
 
