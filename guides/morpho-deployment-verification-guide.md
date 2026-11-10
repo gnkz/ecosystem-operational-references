@@ -84,7 +84,7 @@ Preferred sources:
 Pass condition:
 
 - Live market parameters exactly match the documented expected parameters
-- Oracle values cross-checked against DefiLlama prices via Morpho [oracle decoder](https://oracles.morpho.dev/oracle-decoder)
+- Oracle values cross-checked against DefiLlama prices via Morpho [oracle decoder](https://curator.morpho.org/oracles/decoder)
 
 ### 5. Verify Oracle Configuration
 
@@ -121,7 +121,7 @@ Pass condition:
 
 - Live role assignments match scope
 - Timelock values match the intended governance policy
-- Standard Morpho timelocks (required for Morpho UI listing) confirmed via [vault listing](https://listing.morpho.dev/vaults-v2)
+- Standard Morpho timelocks (required for Morpho UI listing) confirmed via the vault's listing checks in the [Morpho Curator app](https://curator.morpho.org) (`/vaults/<chainId>/<vaultAddress>/listing`)
 
 ### 7. Verify Audit Coverage and Provenance
 
